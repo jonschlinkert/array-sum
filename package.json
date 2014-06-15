@@ -1,0 +1,42 @@
+{
+  "name": "array-sum",
+  "description": "Add up all of the numbers in an array of numbers. Works when non-numbers are present as well.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/array-sum",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/array-sum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/array-sum/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonschlinkert/array-sum/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "add",
+    "sum",
+    "summarize",
+    "array",
+    "numbers"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "verb": "~0.2.6",
+    "chai": "~1.9.1",
+    "mocha": "*"
+  }
+}
