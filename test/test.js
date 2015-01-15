@@ -17,3 +17,8 @@ it('should add the numbers in an array with non-numbers.', function () {
   var actual = arraySum([1, 'foo', 2, 3, 4, {}, 5]);
   expect(actual).to.eql(15);
 });
+
+it('should give 0 for an empty array.', function () {
+  var actual = arraySum([]);
+  expect(actual).to.eql(0);
+});

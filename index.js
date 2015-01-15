@@ -8,6 +8,7 @@
 'use strict';
 
 module.exports = function arraySum(arr) {
+  if(arr.length == 0) return 0;
   return arr.reduce(function(a, b, i, c) {
     a = typeof a === 'number' ? a : 0;
     b = typeof b === 'number' ? b : 0;
