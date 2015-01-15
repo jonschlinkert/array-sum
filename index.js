@@ -1,17 +1,28 @@
 /*!
  * array-sum <https://github.com/jonschlinkert/array-sum>
  *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
+ * Copyright (c) 2014-2015, Jon Schlinkert.
  * Licensed under the MIT License
  */
 
 'use strict';
 
+var isNumber = require('is-number');
+
 module.exports = function arraySum(arr) {
-  if(arr.length == 0) return 0;
-  return arr.reduce(function(a, b, i, c) {
-    a = typeof a === 'number' ? a : 0;
-    b = typeof b === 'number' ? b : 0;
-    return a + b;
-  });
+  if (!Array.isArray(arr)) {
+    return 0;
+  }
+
+  var len = arr.length;
+  var res = 0;
+
+  while (len--) {
+    var n = arr[len];
+    if (isNumber(n) && isFinite(n)) {
+      res += (+n);
+    }
+  }
+
+  return res;
 };
